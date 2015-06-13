@@ -20,7 +20,7 @@ class User extends \Eloquent implements UserInterface, RemindableInterface {
    */
   public function setPasswordAttribute($value) {
 
-    if (!empty($velue))
+    if (!empty($value))
     {
       $this->attributes['password'] = \Hash::make($value);
     }
